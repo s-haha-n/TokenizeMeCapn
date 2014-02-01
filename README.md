@@ -2,5 +2,4 @@ TokenizeMeCapn
 ==============
 String Tokenizer by:
 
-Tobias Perelstein
-Shahan Akhter
+Tobias Perelstein | Shahan Akhter
