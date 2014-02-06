@@ -2,13 +2,18 @@
  * tokenizer.c
  */
 #include <stdio.h>
+#include <string.h>//can we ?
 
 /*
  * Tokenizer type.  You need to fill in the type as part of your implementation.
  */
 
 struct TokenizerT_ {
-};
+	char* sep;
+	char* string;
+	char* currPos;
+
+} TokenMakerT;
 
 typedef struct TokenizerT_ TokenizerT;
 
@@ -27,8 +32,18 @@ typedef struct TokenizerT_ TokenizerT;
  */
 
 TokenizerT *TKCreate(char *separators, char *ts) {
-
+TokenizerT *tk;
+int x,y;//More ?
+char *tmp =  malloc(); //sizeof char star
+	
+if(separators == NULL || ts == NULL)
+	{
   return NULL;
+	}
+
+for(x=0; x < strlen(seprarators); x++){//separate the delims      ijf
+
+}
 }
 
 /*
@@ -67,6 +82,21 @@ char *TKGetNextToken(TokenizerT *tk) {
  */
 
 int main(int argc, char **argv) {
+
+//	TokenMakerT *tk;
+	int size;
+	char *token;
+if(argc != 3){
+	printf("Invalid num of args\n");
+	return -1;
+	     }
+size=strlen(argv[1]);
+
+//tk = TKCreate(argv[1],argv[2]);
+
+//test
+printf("delimeters: %s\ntokens: %s\ndelim-length: %d\ntoken-length: \n", argv[1],argv[2],size);
+//test
 
   return 0;
 }
